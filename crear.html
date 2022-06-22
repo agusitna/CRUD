@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar nuevo afiliado</title>
+</head>
+<body>
+    <div id="page-wrapper">
+        <header id="header">
+          <div class="logo">
+            <img
+              id="header-img"
+              src="logo.png"
+              alt="logo de Andar"
+          ></div>
+  
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#">Buscar afiliado</a></li>
+                    <li><a class="nav-link" href="#">Generar reporte</a></li>
+                    <li><a class="nav-link" href="#">Volver</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main class="container">
+        <div class="campos">
+            <h3>Datos del nuevo afiliado</h3>
+            <input id="input" type="number" name="cuil" placeholder="CUIL" required>
+            <input id="input" type="number" name="dni" placeholder="DNI" required>
+            <input id="input" type="text" name="nombre" placeholder="Nombre">
+            <input id="input" type="text" name="apellido" placeholder="Apellido" required>
+            <input id="input" type="email" name="email" placeholder="Email">
+            <label for="nacimiento">Fecha de nacimiento </label><input id="input" type="date" name="nacimiento" required>
+            <label for="alta">Fecha de alta</label> <input id="input" type="date" name="alta" value="fecha()" required>
+        </div>
+        <section id="botones" style="margin-top: 5px;">
+            <button type="submit" class="btn-submit">Cargar</button>
+        </section>
+    </main>
+    <script>
+        function fecha(){
+            var timestamp = 1607110465663
+            var date = new Date(timestamp);
+    
+            console.log("Date: "+date.getDate()+
+                    "/"+(date.getMonth()+1)+
+                    "/"+date.getFullYear());
+        }
+    </script>                                   
+</body>
+</div>
+
+</html>
