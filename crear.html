@@ -34,22 +34,12 @@
             <input id="input" type="text" name="apellido" placeholder="Apellido" required>
             <input id="input" type="email" name="email" placeholder="Email">
             <label for="nacimiento">Fecha de nacimiento </label><input id="input" type="date" name="nacimiento" required>
-            <label for="alta">Fecha de alta</label> <input id="input" type="date" name="alta" value="fecha()" required>
+            <label for="alta">Fecha de alta</label> <input id="input" type="date" name="alta" required>
         </div>
         <section id="botones" style="margin-top: 5px;">
             <button type="submit" class="btn-submit">Cargar</button>
         </section>
-    </main>
-    <script>
-        function fecha(){
-            var timestamp = 1607110465663
-            var date = new Date(timestamp);
-    
-            console.log("Date: "+date.getDate()+
-                    "/"+(date.getMonth()+1)+
-                    "/"+date.getFullYear());
-        }
-    </script>                                   
+    </main>                          
 </body>
 </div>
 
